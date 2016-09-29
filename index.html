@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="index.js"></script>
+    <style>
+      body {
+        text-align: center;
+      }
+      .board {
+        margin: 10%;
+        font-size: 1.5rem;
+        border: solid brown 5px;
+        display: inline-block;
+        padding: 5%;
+        line-height: 1rem;
+        font-weight: bold;
+      }
+      input {
+        font-size: 1.5rem;
+        color: brown;
+        border: 2px solid brown;
+        padding: 5px;
+        text-align: center;
+      }
+      .form-line {
+        margin: 2.5%;
+      }
+      button {
+        background: white;
+        border: 5px solid brown;
+        font-size: 1.5rem;
+        border-radius: 25px;
+        padding: 5px 15px;
+      }
+    </style>
+    <title></title>
+  </head>
+  <body>
+    <div class="form-line">
+      <label for="boardSize">Enter a side length for the board:</label>
+      <input type="number" id="boardSize" value="8">
+    </div>
+    <div class="form-line">
+      <label for="boardSymbol">Enter a symbol to display on the board:</label>
+      <input type="text" id="boardSymbol" maxlength="1" value="#">
+    </div>
+    <button id="generate" class="form-line">Generate a new board</button>
+    <hr>
+  </body>
+</html>
